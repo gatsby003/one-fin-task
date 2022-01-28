@@ -1,0 +1,54 @@
+GET https://demo.credy.in/api/v1/maya/movies/
+Content-Type: application/json
+Authorization: Basic iNd3jDMYRKsN1pjQPMRz2nrq7N99q4Tsp9EY9cM0:Ne5DoTQt7p8qrgkPdtenTK8zd6MorcCR5vXZIJNfJwvfafZfcOs4reyasVYddTyXCz9hcL5FGGIVxw3q02ibnBLhblivqQTp4BIC93LZHj4OppuHQUzwugcYu7TIC5H1
+
+#####
+GET http://localhost:8000/api/collections/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZ2FuZXNoMSJ9.wQHELJEce43pq4WJESsnH0aeQtWLrIsv0Hjsyfs6nJU
+
+####
+POST http://localhost:8000/api/collections/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZ2FuZXNoMSJ9.wQHELJEce43pq4WJESsnH0aeQtWLrIsv0Hjsyfs6nJU
+
+{
+    "title" : "Movie Collection",
+    "description" : "Description of collection",
+    "movies" : [{"title": "Betrayal", "description": "When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...", "genres": "Action,Drama,Thriller", "uuid": "720e8796-5397-4e81-9bd7-763789463707"}, {"title": "Siglo ng Pagluluwal", "description": "An artist struggles to finish his work while a storyline about a cult plays in his head.", "genres": "Drama", "uuid": "e9548ee7-6a95-4917-893e-1fa1d3a6de40"}, {"title": "رگ خواب", "description": "Rising and falling between a man and woman.", "genres": "Drama,Family", "uuid": "9b0a4aa2-9ec7-4a3d-98ab-622275f44ea5"}]
+}
+
+#####
+DELETE http://localhost:8000/api/collections/f4bcd1d8-67bb-4f84-9e4c-899499390bda
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZ2FuZXNoMSJ9.wQHELJEce43pq4WJESsnH0aeQtWLrIsv0Hjsyfs6nJU
+
+#####
+PUT http://localhost:8000/api/collections/320aef2f-df62-42aa-a068-e82c01434403
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZ2FuZXNoMSJ9.wQHELJEce43pq4WJESsnH0aeQtWLrIsv0Hjsyfs6nJU
+
+{
+    "title" : "Movie Collection",
+    "description" : "this is a description",
+    "movies" : [{"title": "Feteus Wars", "description": "When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...", "genres": "Action,Drama,Thriller", "uuid": "720e8796-5397-4e81-9bd7-763789463707"}, {"title": "Siglo ng Pagluluwal", "description": "An artist struggles to finish his work while a storyline about a cult plays in his head.", "genres": "Drama", "uuid": "e9548ee7-6a95-4917-893e-1fa1d3a6de40"}, {"title": "رگ خواب", "description": "Rising and falling between a man and woman.", "genres": "Drama,Family", "uuid": "9b0a4aa2-9ec7-4a3d-98ab-622275f44ea5"}]
+}
+
+#####
+GET http://localhost:8000/api/collections/320aef2f-df62-42aa-a068-e82c01434403
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZ2FuZXNoMSJ9.wQHELJEce43pq4WJESsnH0aeQtWLrIsv0Hjsyfs6nJU
+
+####
+GET http://localhost:8000/api/movies/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiZ2FuZXNoMSJ9.wQHELJEce43pq4WJESsnH0aeQtWLrIsv0Hjsyfs6nJU
+
+####
+POST http://localhost:8000/api/register/
+Content-Type: application/json
+
+{
+    "name" : "ganesh1",
+    "password" : "123" 
+}
